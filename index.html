@@ -1,154 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Transformative Education Center</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transformative Education Centre (TEC)</title>
+  <meta name="description" content="Transformative Education Centre: Intentions, philosophy, challenges, activities, and ways to contribute.">
   <style>
     body {
-      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f7fafc;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.7;
     }
-    .navbar {
-      background-color: #004080;
-    }
-    .navbar-brand, .nav-link, .navbar-nav .nav-link.active {
-      color: #fff !important;
-      font-weight: 600;
-      letter-spacing: 1px;
-    }
-    .nav-link:hover {
-      color: #ffd700 !important;
-    }
-    .hero {
-      background: #004080;
+    header {
+      background: #263c5a;
       color: #fff;
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
       text-align: center;
-      border-radius: 0 0 40px 40px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-      margin-bottom: 2rem;
     }
-    .section-card {
+    nav {
+      background: #e6eaf2;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav a {
+      color: #263c5a;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
       background: #fff;
-      border-radius: 18px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(38,60,90,0.07);
       padding: 2rem;
-      margin-bottom: 2rem;
     }
-    h2 {
-      color: #004080;
-      margin-bottom: 1rem;
+    section {
+      margin-bottom: 2.5rem;
     }
-    .fa-ul {
+    h1, h2, h3 {
+      color: #263c5a;
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1.5em 0;
+      padding: 1em 1.5em;
+      background: #f2f5fa;
+      border-left: 4px solid #263c5a;
+      font-style: italic;
+      color: #444;
+    }
+    ul, ol {
       margin-left: 2em;
     }
     footer {
-      background: #004080;
+      background: #263c5a;
       color: #fff;
       text-align: center;
-      padding: 1.2rem 0;
-      margin-top: 2rem;
-      border-radius: 40px 40px 0 0;
-      letter-spacing: 1px;
+      padding: 1.1rem 0;
+      margin-top: 3rem;
+      border-radius: 0 0 12px 12px;
+      font-size: 1em;
     }
-    @media (max-width: 576px) {
-      .hero {
-        border-radius: 0 0 20px 20px;
-        padding: 2rem 0.5rem;
-      }
-      .section-card {
+    @media (max-width: 600px) {
+      main, header {
         padding: 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="#"><i class="fa-solid fa-graduation-cap"></i> Transformative Ed Center</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#bio">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#teaching">Teaching</a></li>
-          <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
+  <header>
+    <h1>Transformative Education Centre (TEC)</h1>
+    <p>Learning, Inquiry, and Change for All</p>
+  </header>
+  <nav>
+    <a href="#intentions">Intentions</a>
+    <a href="#problems">Problems in Education</a>
+    <a href="#forums">Forums & Activities</a>
+    <a href="#contribute">Contribute</a>
+    <a href="#contacts">Contacts & Related</a>
   </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1 class="display-5 fw-bold mb-2"><i class="fa-solid fa-lightbulb"></i> Transformative Education Center</h1>
-    <p class="lead mb-0">Inspiring learners to become agents of change</p>
-  </section>
-
-  <main class="container">
-
-    <!-- About Section -->
-    <section id="bio" class="section-card">
-      <h2><i class="fa-solid fa-user"></i> About</h2>
-      <p>Gopal Krishnamurthy is an educator, researcher, and lifelong learner dedicated to transforming the educational experience. With over 30 years in the field, he brings a unique blend of academic expertise and heartfelt commitment to student growth.</p>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education" class="section-card">
-      <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
-      <ul class="fa-ul">
-        <li><span class="fa-li"><i class="fa-solid fa-certificate text-primary"></i></span>2012: PhD in Education, Gevirtz Graduate School of Education, University of California, Santa Barbara, USA.</li>
-        <li><span class="fa-li"><i class="fa-solid fa-certificate text-primary"></i></span>2010: MA in Education, Gevirtz Graduate School of Education, University of California, Santa Barbara, USA.</li>
-        <li><span class="fa-li"><i class="fa-solid fa-certificate text-primary"></i></span>2005–2006: PhD student, Dept. of Philosophy, University of Hawai’i at Manoa, USA. Comparative (East-West) Philosophy and Philosophy for Children (P4C).</li>
-        <li><span class="fa-li"><i class="fa-solid fa-certificate text-primary"></i></span>1998: MA in Philosophy, Colorado State University, USA. Studies in Symbolic Logic and Applied Ethics.</li>
-        <li><span class="fa-li"><i class="fa-solid fa-certificate text-primary"></i></span>1992: BA (Honors), Major in Physics, The Open University, UK.</li>
-      </ul>
-    </section>
-
-    <!-- Teaching Philosophy Section -->
-    <section id="teaching" class="section-card">
-      <h2><i class="fa-solid fa-chalkboard-user"></i> Teaching Philosophy</h2>
-      <p>My teaching is guided by principles that emphasize deep attention, questioning assumptions, and challenging false binaries in education. I strive to create spaces where teaching is not about reinforcing known truths but about exposing foundational beliefs to inquiry and transformation. Teaching safely protects the status quo; teaching with risk invites uncertainty, wonder, and the reframing of problems. I aim to uncover rather than cover curriculum, cultivating a sense of curiosity and disruption. My classes foster vibrant learning ecologies through dialogue, integration of knowledge, and shared exploration. I often lead students into “not knowing,” prompting creativity and experimentation. Recognized for my teaching with award nominations and inclusion in discussions of liberationist education, I continue to explore what that looks like in everyday teaching moments. I embrace theater and improvisation to challenge traditional classroom dynamics. Ultimately, my approach blends preparation with responsiveness, inviting joy, challenge, and transformative engagement in learning.</p>
-    </section>
-
-    <!-- Research Section -->
-    <section id="research" class="section-card">
-      <h2><i class="fa-solid fa-book-open"></i> Research &amp; Publications</h2>
-      <p><strong>Research Interests:</strong> Transformative learning, inclusive pedagogy, education policy</p>
+  <main>
+    <section id="intentions">
+      <h2>Intentions of the Transformative Education Centre (TEC)</h2>
       <ul>
-        <li><em>Forthcoming:</em> Book version of Ph.D. dissertation “Gesturing Towards Teaching: A Teacher’s Narrative.”</li>
-        <li>Krishnamurthy, G. (2019). "Taking Mistakes: A Mathematical Tragicomedy," <em>The New Educator</em>, Routledge.</li>
-        <li>Boxley, S., Krishnamurthy, G. &amp; Ridgway, M. (2016). "Learning Care for the Earth with Krishnamurti" in <em>Environmental Education in Times of Crisis</em>, Routledge.</li>
-        <li>Krishnamurthy, G. (2013). "The Global Scope of a Local Response: School-in-a-box and the RIVER methodology," <em>Knowledge Cultures</em>, Addleton Academic Publishers.</li>
+        <li>Providing a learning space for people from all walks of life.</li>
+        <li>Addressing the ‘root’ (in this sense radical) of questions and challenges.</li>
+        <li>Attending to everything and not taking anything for granted – reflecting unfettered and unbounded inquiry.</li>
+        <li>Not meeting or answering questions or problems on their given terms but rather to question the questions themselves – reflecting paradigmatic changes.</li>
+        <li>Exploring both the ‘outer world’ and the ‘world within’ and their relationship and interaction.</li>
+        <li>Integrating education, inquiry, discovery, innovation, research, dialogue, and action.</li>
       </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section-card">
-      <h2><i class="fa-solid fa-envelope"></i> Contact</h2>
-      <p>Have questions or want to collaborate? Reach out-We’d love to connect.</p>
+      <blockquote>
+        “We did not come to keep the world as it is: we came to the world in order to remake the world.”<br>
+        <strong>– Paulo Freire</strong>
+      </blockquote>
+      <blockquote>
+        “When you change not at a superficial level but fundamentally, you affect consciousness, because you are the world and the world is you.”<br>
+        <strong>– Jiddu Krishnamurti</strong>
+      </blockquote>
       <p>
-        <a href="mailto:gopal.learning@gmail.com" class="btn btn-primary">
-          <i class="fa-solid fa-envelope"></i> Email Us
-        </a>
+        <strong>Outline:</strong> Transformative education situates us not as passive inheritors and recipients of our world but rather as attentive and inquiring agents of change – challenging who we are, what we are with each other, and how we live in and with this world. Rooted in experiential and liberatory learning, this transdisciplinary hub addresses educational challenges in daily life. Relinquishing settled answers and conclusions, participants leave with reframed, informed, and nuanced experiences, collaborations, struggles, insights, and enduring questions in their learning, work, and lives. The programs and activities of TEC attempt to sustain working, learning, and living with attention, exploration, passion, ingenuity, wonder, and an unquenchable thirst for learning, unlearning, and change.
       </p>
     </section>
 
+    <section id="problems">
+      <h2>Some Problems We See With the Status Quo of Education</h2>
+      <ul>
+        <li>Education as it exists sustains conformity and self-centeredness rather than freedom and responsibility.</li>
+        <li>A fundamental structure of education at most schools/universities involves knowledge transfer from the one who ‘knows’ to the one who doesn't. When this process is repeated, the human mind and behavior are conditioned in ways that prohibit originality and creative thinking and action.</li>
+        <li>Education conditions the mind towards entrenched ways of thinking or merely answering questions with little emphasis on understanding the questions themselves, or questioning the assumptions in the questions. Through this repeated pattern, the sense of discovery also withers. We see this as a danger, where people are tied to known patterns and unwilling to see each problem with fresh eyes.</li>
+        <li>To solve issues arising from the struggle of fitting into patterns, new methods and techniques are introduced which aim to address the issue in isolation (e.g., social emotional learning, academic learning, mindfulness, etc.). This may seem like a solution but it perpetuates the accumulation of more patterns and further fragmentation.</li>
+        <li>The persistent emphasis on goals, outcomes, destinations, and what should be creates linear (point A to B) and narrow pathways of learning, leaving unchallenged deeply held notions of improvement, comparison, and measurement. This projection takes us away from facing, understanding, and transforming what is actually taking place.</li>
+      </ul>
+      <p>The Transformative Education Centre explores and addresses these issues.</p>
+    </section>
+
+    <section id="forums">
+      <h2>Forums, Themes, and Activities</h2>
+      <h3>Activities:</h3>
+      <ul>
+        <li>Presentations, Conferences, Workshops, Dialogues, Courses, Programs, Study and Retreats</li>
+      </ul>
+      <h3>Forums and Themes:</h3>
+      <ul>
+        <li>University and College programs and courses</li>
+        <li>Online platforms</li>
+        <li>Micro school environment: homeschool/school/unschool</li>
+        <li>Parent education and teacher education</li>
+        <li>Systems learning</li>
+        <li>Environmental education</li>
+      </ul>
+      <h3>Bay Area Learning Centre:</h3>
+      <ul>
+        <li>
+          <strong>Micro school environment:</strong> homeschool/school/unschool for children (learner educators) and adults (educator learners). The root meaning of ‘school’ originates from leisure. Generating a real-learning world rather than real-world learning and application. Exploring both the ‘outer world’ and the ‘world within’ and their relationship and interaction. Inter and transdisciplinary curriculum drawing on questions and themes.
+        </li>
+        <li>
+          The intentions of the Micro school are consonant with the Intentions of a Krishnamurti School (J. Krishnamurti) &amp; An Experiment In Learning (David Bohm). See also Video Clips of Rishi Valley School RIVER (School-in-a-box) MGML (Multi-Age and Multi-Level) with K narration.
+          <ul>
+            <li>School/Classroom (3mins)</li>
+            <li>Teacher: Home-life and life-at school (30 seconds)</li>
+          </ul>
+        </li>
+      </ul>
+      <h4>Curriculum areas:</h4>
+      <ul>
+        <li>Inter and cross disciplinary explorations in various areas of inquiry</li>
+        <li>Tinkering and maker spaces</li>
+        <li>Understanding the worlds within and the world outside</li>
+        <li>Quiet time</li>
+        <li>Relationship with Nature</li>
+        <li>Food, health, yoga/exercise</li>
+      </ul>
+      <ul>
+        <li><strong>Teacher Education and Parent Education</strong></li>
+        <li><strong>Adult Education:</strong> inquiry, dialogues, conferences, workshops, retreats etc. Activities such as tinkering/maker space, music, dance, theatre, crafts, science labs, yoga, retreats, etc.</li>
+        <li><strong>Resource and research centre:</strong> with books and other resources.</li>
+      </ul>
+      <p>
+        <strong>Key questions:</strong>
+        <ul>
+          <li>What does it look like for learning rather than the measurement of learning to be at the heart of an educational center?</li>
+          <li>Rather than squeezing learning into the rigid structures of a ‘school’, what does it look like for a learning environment to pliably reflect the whole movement of learning and life?</li>
+          <li>What kinds of learning experiences lend themselves to people of different ages, experiences, and fluencies to be learning all together, learning in groups, and learning independently – what is the basis for such organization and structures?</li>
+          <li>When teaching, learning, curriculum, schools, and universities are so resolutely structured to demonstrate what we already know, ‘not knowing’ is a rare but crucial point of departure for education.</li>
+        </ul>
+      </p>
+    </section>
+
+    <section id="contribute">
+      <h2>Contribute</h2>
+      <p>
+        If you are interested in contributing (volunteering for specific projects or making financial contributions), please contact us below.
+      </p>
+    </section>
+
+    <section id="contacts">
+      <h2>Contacts &amp; Related Centres</h2>
+      <ul>
+        <li><a href="https://www.antioch.edu/academics/education/med-exed/med-for-experienced-educators-transformative-education/" target="_blank" rel="noopener">Antioch University – Transformative Education</a></li>
+        <li><a href="https://krishnamurtistudies.org/" target="_blank" rel="noopener">Krishnamurti Studies</a></li>
+        <li><a href="https://hawkinscenters.weebly.com/" target="_blank" rel="noopener">Hawkins Centers</a></li>
+        <li><a href="https://criticalexplorers.org/" target="_blank" rel="noopener">Critical Explorers</a></li>
+        <li><a href="https://cepress.org/" target="_blank" rel="noopener">Contemporary Education Press</a></li>
+      </ul>
+    </section>
   </main>
-
   <footer>
-    <p>&copy; 2025 Transformative Education Center</p>
+    &copy; 2025 Transformative Education Centre &mdash; All rights reserved.
   </footer>
-
-  <!-- Bootstrap JS (for navbar toggling on mobile) -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
